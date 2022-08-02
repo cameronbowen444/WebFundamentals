@@ -1,0 +1,23 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+h1 span {
+    color: cyan;
+}
+h2 {
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+}
+h3 {
+    background-color: powderblue;
+    color: black;
+    text-align: right;
+    text-decoration: underline black;
+
+}

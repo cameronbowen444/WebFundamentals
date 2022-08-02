@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* I decided to contain all of the content to create a nice organized list */
+
+#container {    
+    margin: 10px auto;
+    width: 900px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* The header tag is the entire first navigation bar*/
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(56, 219, 184);
+}
+#left-nav, #mid-nav, #right-nav {
+    display: flex;
+    align-items: center;
+}
+#searchbar {
+    padding: 7px 400px 7px 10px;
+    border-radius: 20px;
+    border: 2px solid darkgrey;
+    background-image: url("search-dark.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-x: 515px;
+    background-position-y: 2px;
+}
+#cart {
+    width: 40px;
+    height: 40px;
+}
+.title {
+    margin-left: 15px;
+}
+.signin {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+/* The header2 is similar to the first header but I thought it would be better to keep 
+them seperate so that the code looks nice and clean. */
+#header2 {
+    border-bottom: 4px solid black;
+    padding: 10px;
+}
+#header2, .head2links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+}
+#title2 {
+    text-align: center;
+    margin: 10px;
+}
+/* The first row which is split in 2 with 2 divs on each side and everything is being flexed*/
+#row {
+    display: flex;
+}
+#col1 {
+    display: flex;
+}
+.box1 {
+    flex: 2;
+    width: 290px;
+    height: 300px;
+    background-color: rgb(56, 219, 184);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.background-img {
+    width: 290px;
+    height: 300px;
+}
+.h1-box {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+}
+#col2 {
+    display: flex;
+    flex-direction: column;
+}
+.box2 {
+    flex: 1;
+    margin-left: 20px;
+    width: 300px;
+    height: auto;
+    display: flex;
+}
+.back-img {
+    width: 300px;
+    height: auto;
+}
+.box3 {
+    width: 300px;
+    height: 80px;
+    background-color: rgb(56, 219, 184);
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.h3-box {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+/* This was a simple task and wanted to keep it as concise as possible so as you can see everything is pretty
+much contained in the entire row for CSS*/
+#row2 {
+    width: 900px;
+    height: 300px;
+    margin-top: 20px;
+    background-color: rgb(56, 219, 184);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.div-foot {
+    margin: 10px;
+}
+.plant-foot {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
+
+/* I found this method to be quite easy to do a similar take, by splitting in 3 sections inside of the box
+and contained within so that nothing breaks */
+#warning {
+    padding: 5px 15px;
+    width: 865px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 150px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+.cookie-foot1 {
+    margin: 10px;
+}
+.cookie-foot2 {
+    margin: 0px 75px;
+}
+button {
+    background-color: lightseagreen;
+    padding: 5px 25px;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+}

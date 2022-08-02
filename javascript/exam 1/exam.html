@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Webite</title>
+    <link rel="stylesheet" href="exam.css">
+</head>
+<body>
+    <div id="container">
+
+
+        <!--The header tag sectioned with 3 IDs to split properly-->
+        <div id="header">
+            <div id="left-nav">
+                <a href="#"><img src="leaf.png" alt="logo" id="logo"></a>
+                <h1 class="title">EasyBay</h1>
+            </div>
+            <div id="mid-nav">
+                <input type="text" name="searchbar" placeholder="Search for anything"  id="searchbar">
+            </div>
+            <div id="right-nav">
+                <a href="#" class="signin">Sign In</a>
+                <a href="#"><img src="cart-dark.png" alt="cart" id="cart" onclick="showCart()"></a>
+            </div>
+        </div>
+        
+        <!--The second header tag sectioned, I chose not use a list since it would have ended up being more time 
+        consuming-->
+        <div id="header2">
+            <a href="#" class="head2links">Aeonium</a>
+            <a href="#" class="head2links">Andormischus</a>
+            <a href="#" class="head2links">Agave</a>
+            <a href="#" class="head2links">Aloe</a>
+            <a href="#" class="head2links">Anacampseros</a>
+            <a href="#" class="head2links">Aristaloe</a>
+            <a href="#" class="head2links">More...</a>
+        </div>
+        <!--The title -->
+        <div id="title2">
+            <h1>Your Source for Serious Succulent Specialties</h1>
+        </div>
+        <!--Each row is an entire section, this is row 1 which is split into 2 columns and 2 divs within each 
+        column -->
+        <div id="row">
+            <div id="col1">
+                <div class="box1">
+                    <h1 class="h1-box">Discover succulent varieties one pot or rack at a time!</h1>
+                    <h1><a href="#" class="h1-box">Discover →</a></h1>
+                </div>
+                <div><img src="succulents-1.jpg" alt="background-img" class="background-img" 
+                    onmouseover="over()" onmouseout="out()"></div>
+            </div>
+            <div id="col2">
+                <div class="box2">
+                    <img src="aloe-m.jpg" alt="back-img" class="back-img">
+                </div>
+                <div class="box3">
+                    <h3><a href="#" class="h3-box">Soothing aloe →</a></h3>
+                </div>
+            </div>
+        </div>
+
+        <!--The second row I dicided to make the images clickable since I though it would add a little 
+        more character to the page -->
+        <div id="row2">
+            <div class="div-foot">
+                <a href="#"><img src="aeonium-s.jpg" alt="plant1" class="plant-foot"></a>
+                <p>Aeonium</p>
+            </div>
+            <div class="div-foot">
+                <a href="#"><img src="aloe-s.jpg" alt="plant2" class="plant-foot"></a>
+                <p>Aloe</p>
+            </div>
+            <div class="div-foot">
+                <a href="#"><img src="cactus-s.jpg" alt="plant3" class="plant-foot"></a>
+                <p>Cactus</p>
+            </div>
+            <div class="div-foot">
+                <a href="#"><img src="echeveria-s.jpg" alt="plant4" class="plant-foot"></a>
+                <p> Echeveria</p>
+            </div>
+            <div class="div-foot">
+                <a href="#"><img src="sedum-s.jpg" alt="plant5" class="plant-foot"></a>
+                <p>Sedum</p>
+            </div>
+            <div class="div-foot">
+                <a href="#"><img src="sempervivum-s.jpg" alt="plant6" class="plant-foot"></a>
+                <p>Sempervivum</p>
+            </div>
+        </div>
+
+
+        <!--This is my warning cookie tag, the two same classes have an exact layout while the mid class section 
+        takes up 2 flex. -->
+        <div id="warning">
+            <div class="cookie-foot1"><img src="alert-dark.png" alt="warning-logo"></div>
+            <div class="cookie-foot2"><p>This site makes use of third-party cookies, by clicking "I accept"
+                you agree to the terms outlined in our <a href="#">cookie policy.</a>
+            </p></div>
+            <div class="cookie-foot1"><button onclick="hide()">I Accept</button></div>
+        </div>
+    </div>
+
+<script src="exam.js"></script>
+</body>
+</html>
